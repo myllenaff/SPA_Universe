@@ -1,0 +1,147 @@
+:root{
+  font-size: 62.5%;
+  --hue: 240;
+  --primary-color: hsl(var(--hue), 9%, 89%);
+  --secondary-color: hsl(var(--hue), 7%, 78%);
+  --ff-primary: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-primary);
+
+  background-image: url(images/universo.jpg);
+  background-size: cover;
+  background-position: center;
+
+  min-height: 100vh;
+  min-width: 100vw;
+
+  object-fit: cover
+}
+
+nav {
+  display: flex;
+  align-items: center;
+
+  max-width: 100vw;
+   padding: 4rem 7rem;
+}
+
+nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 400px;
+}
+
+nav ul li {
+  list-style: none;
+  transition: all 300ms ease-in-out;
+}
+
+nav ul li a{
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+}
+
+nav ul li:hover {
+  transform: scale(1.1);
+}
+
+li:hover a {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.focus {
+  font-size: 2.4rem;
+
+  color: var(--primary-color);
+
+  font-weight: bold;
+}
+
+.home,
+.e404 {
+  height: 13.2rem;
+  width: 40rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  color: var(--primary-color);
+}
+
+.home h1,
+.universe h1,
+.exploration h1,
+.e404 h1 {
+  font-size: 4.6rem;
+  font-weight: bold;
+  line-height: 125%;
+
+  color: var(--primary-color); text-shadow: black 0.1em 0.1em 0.2em;
+  
+
+  margin-bottom: 2.4rem;
+}
+
+.home a {
+  border: 2px solid #FFFFFF;
+  border-radius: 5px;
+  padding: 1.2rem 3.2rem;
+
+  background-color: transparent;
+
+  color: var(--primary-color);
+
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: bold;
+}
+
+.home a:hover {
+  background-color: #FFFFFF;
+
+  color: #02799D;
+  cursor: pointer;
+
+  transition: 400ms ease-in;
+}
+
+.universe,
+.exploration {
+  max-height: 25.7rem;
+  max-width: 61.8rem;
+
+  margin: 6.4rem auto auto 10.2rem;
+}
+
+.universe p,
+.exploration p {
+  font-size: 1.8rem;
+  line-height: 160%;
+
+  color: var(--secondary-color);
+}
+
+
