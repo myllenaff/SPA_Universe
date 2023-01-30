@@ -1,6 +1,8 @@
-h1 align="center">SPA Universe </h1>
+<h1 align="center">SPA Universe </h1>
 
 <p align="center">Projeto SPA (Single Page Application) construído para exercitar conceitos sobre:</p>
+
+![preview](.github/preview.gif)
 
 <ul>
   <li>SPA (Single page Application</li>
