@@ -42,7 +42,6 @@ nav ul{
 
 nav ul li {
   list-style: none;
-  transition: all 300ms ease-in-out;
 }
 
 nav ul li a{
@@ -50,23 +49,14 @@ nav ul li a{
   text-decoration: none;
   font-size: 2.2rem;
   line-height: 2.2rem;
+  transition: all 300ms ease-in-out;
 }
 
-nav ul li:hover {
-  transform: scale(1.1);
-}
-
-li:hover a {
+li a:hover,
+li a.focus {
   color: var(--primary-color);
   font-weight: bold;
-}
-
-.focus {
   font-size: 2.4rem;
-
-  color: var(--primary-color);
-
-  font-weight: bold;
 }
 
 .home,
@@ -89,17 +79,13 @@ li:hover a {
   color: var(--primary-color);
 }
 
-.home h1,
-.universe h1,
-.exploration h1,
-.e404 h1 {
+ h1 {
   font-size: 4.6rem;
   font-weight: bold;
   line-height: 125%;
 
-  color: var(--primary-color); text-shadow: black 0.1em 0.1em 0.2em;
-  
-
+  color: var(--primary-color); 
+  text-shadow: black 0.1em 0.1em 0.2em;
   margin-bottom: 2.4rem;
 }
 
